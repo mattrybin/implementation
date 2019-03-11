@@ -1,0 +1,79 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "afe75d4a-2824-4db2-89f4-35bfd6a4e74e": {
+        "id": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
+        "parent": null,
+        "name": "implementation",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "dd579904-c09e-4696-8737-8c9e2708aa86"
+        ],
+        "isRemovable": false,
+        "filePath": "implementation"
+      },
+      "dd579904-c09e-4696-8737-8c9e2708aa86": {
+        "id": "dd579904-c09e-4696-8737-8c9e2708aa86",
+        "parent": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
+        "name": "generateIdArray.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "implementation/generateIdArray.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
+      }
+    },
+    "deletedFiles": [
+      "implementation/lambda.js"
+    ],
+    "rootNode": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
+    "openFiles": [
+      "dd579904-c09e-4696-8737-8c9e2708aa86"
+    ],
+    "currentFileId": "dd579904-c09e-4696-8737-8c9e2708aa86",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "implementation",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1552278292467
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "implementation",
+      "url": "https://github.com/mattrybin/implementation"
+    }
+  }
+}
