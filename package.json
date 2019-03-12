@@ -1,6 +1,9 @@
 {
   "name": "implementation",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "ramda": "0.26.1",
+    "random-js": "1.0.8"
+  },
   "devDependencies": {}
 }
