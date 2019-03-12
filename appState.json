@@ -85,7 +85,7 @@
           "resourcePath": "/get",
           "restMethod": "GET",
           "proxyIntegration": false,
-          "enableCORS": false,
+          "enableCORS": true,
           "stageMode": 0,
           "stageName": "prod"
         },
@@ -117,7 +117,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552352998373
+    "lastSave": 1552353100240
   },
   "VCS_STATE": {
     "provider": "GitHub",
