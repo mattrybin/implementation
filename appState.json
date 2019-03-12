@@ -23,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "implementation/generateIdArray.js",
-        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null, generateID(event))\n}",
+        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null, generateID(100))\n}",
         "triggers": [
           {
             "resourceName": "apigapSoutheast1apitestinggetget",
@@ -71,9 +71,7 @@
         "triggers": []
       }
     },
-    "deletedFiles": [
-      "implementation/lib/generateIdArray.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
     "openFiles": [
       "dd579904-c09e-4696-8737-8c9e2708aa86",
@@ -154,7 +152,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552359180598
+    "lastSave": 1552359322020
   },
   "VCS_STATE": {
     "provider": "GitHub",
