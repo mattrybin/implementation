@@ -23,10 +23,10 @@
         "children": [],
         "isRemovable": true,
         "filePath": "implementation/generateIdArray.js",
-        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null, generateID(100))\n}",
+        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    //callback(null, generateID(100))\n    callback(null, event)\n}",
         "triggers": [
           {
-            "resourceName": "apigapSoutheast1apitestinggetget",
+            "resourceName": "apigapSoutheast1apitestinggetpost",
             "config": {}
           }
         ],
@@ -116,6 +116,25 @@
           "stageName": "prod"
         },
         "globallyEditable": false
+      },
+      "apigapSoutheast1apitestinggetpost": {
+        "name": "apigapSoutheast1apitestinggetpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-1",
+          "apiMode": 0,
+          "apiName": "api testing",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "get",
+          "resourcePath": "/get",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "prod"
+        },
+        "globallyEditable": false
       }
     },
     "customTemplate": {
@@ -152,7 +171,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552359322020
+    "lastSave": 1552359701881
   },
   "VCS_STATE": {
     "provider": "GitHub",
