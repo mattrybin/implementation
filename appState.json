@@ -23,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "implementation/generateIdArray.js",
-        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    //callback(null, generateID(100))\n    callback(null, event)\n}",
+        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    //callback(null, generateID(100))\n    callback(null, context)\n}",
         "triggers": [
           {
             "resourceName": "apigapSoutheast1apitestinggetpost",
@@ -171,7 +171,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552359701881
+    "lastSave": 1552363168215
   },
   "VCS_STATE": {
     "provider": "GitHub",
