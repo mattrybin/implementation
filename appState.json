@@ -23,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "implementation/generateIdArray.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "const generateID = require('./lib/generateID')\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null, generateID(event))\n}",
         "triggers": [
           {
             "resourceName": "apigapSoutheast1apitestinggetget",
@@ -61,23 +61,25 @@
       "1cf10191-2de4-4f31-b5ad-642becc9a733": {
         "id": "1cf10191-2de4-4f31-b5ad-642becc9a733",
         "parent": "ddaf7467-1cfe-4002-ae9e-8875c7a09961",
-        "name": "generateIdArray.js",
+        "name": "generateID.js",
         "type": "JS_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "implementation/lib/generateIdArray.js",
+        "filePath": "implementation/lib/generateID.js",
         "code": "var R = require('ramda');\nvar randomJs = require(\"random-js\")\n\nfunction createId (min, max) {\n    const random = new randomJs(randomJs.engines.browserCrypto)\n    return random.integer(min, max)\n}\n\nfunction createArray(amount) {\n  let array = []\n  while (array.length !== amount) {\n    array = R.pipe(\n      R.append(createId(1, 2000)),\n    )(array)\n  }\n  return array\n}\n\nfunction generateID (amount) {\n    return createArray(amount)\n}\n\nmodule.exports = generateID",
         "triggers": []
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "implementation/lib/generateIdArray.js"
+    ],
     "rootNode": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
     "openFiles": [
       "dd579904-c09e-4696-8737-8c9e2708aa86",
       "1cf10191-2de4-4f31-b5ad-642becc9a733"
     ],
-    "currentFileId": "1cf10191-2de4-4f31-b5ad-642becc9a733",
+    "currentFileId": "dd579904-c09e-4696-8737-8c9e2708aa86",
     "resources": {
       "apigapSoutheast1apitestinggenerateIdArrayget": {
         "name": "apigapSoutheast1apitestinggenerateIdArrayget",
@@ -152,7 +154,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552359056418
+    "lastSave": 1552359180598
   },
   "VCS_STATE": {
     "provider": "GitHub",
