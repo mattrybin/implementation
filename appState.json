@@ -23,25 +23,75 @@
         "isRemovable": true,
         "filePath": "implementation/generateIdArray.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "apigapSoutheast1apitestinggetget",
+            "config": {}
+          }
+        ],
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
           "layers": []
+        },
+        "testCases": {
+          "7d40d84d-5ed1-4205-b23b-3b84e083e321": {
+            "id": "7d40d84d-5ed1-4205-b23b-3b84e083e321",
+            "name": "Unnamed event",
+            "functionId": "dd579904-c09e-4696-8737-8c9e2708aa86",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
         }
       }
     },
-    "deletedFiles": [
-      "implementation/lambda.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "afe75d4a-2824-4db2-89f4-35bfd6a4e74e",
     "openFiles": [
       "dd579904-c09e-4696-8737-8c9e2708aa86"
     ],
     "currentFileId": "dd579904-c09e-4696-8737-8c9e2708aa86",
-    "resources": {},
+    "resources": {
+      "apigapSoutheast1apitestinggenerateIdArrayget": {
+        "name": "apigapSoutheast1apitestinggenerateIdArrayget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-1",
+          "apiMode": 0,
+          "apiName": "api testing",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "generateIdArray",
+          "resourcePath": "/generateIdArray",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod"
+        },
+        "globallyEditable": false
+      },
+      "apigapSoutheast1apitestinggetget": {
+        "name": "apigapSoutheast1apitestinggetget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-1",
+          "apiMode": 0,
+          "apiName": "api testing",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "get",
+          "resourcePath": "/get",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod"
+        },
+        "globallyEditable": false
+      }
+    },
     "customTemplate": {
       "dialect": null,
       "definitions": {}
@@ -67,7 +117,7 @@
     "projectRegion": "ap-southeast-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552278292467
+    "lastSave": 1552352998373
   },
   "VCS_STATE": {
     "provider": "GitHub",
